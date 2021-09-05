@@ -1,0 +1,41 @@
+.newsletter{
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 60px 0;
+    h3{
+        color: $maincolor;
+        font-family: $mainfont;
+        margin-bottom: 57px;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input[type="email"]{
+            border: unset;
+            background-color: transparent;
+            border-bottom: 1px solid #000;
+            width: 333px;
+            padding: 6px 6px;
+            &::placeholder{
+                font-family: $mainfont;
+                color: $maincolor;
+                font-size: 14px;
+            }
+        }
+        input[type="submit"]{
+            position: relative;
+            bottom: -2px;
+            right: 30px;
+            border: unset;
+        }
+        @media (max-width: 576px) { 
+            input[type="email"]{
+                width: auto;
+                &::placeholder{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

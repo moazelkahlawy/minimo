@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100vh;
+  background: url(../img/header.png);
+  background-repeat: no-repeat;
+  background-size: 100% 86%;
+  background-position: bottom;
+}
+
+header nav .navbar-brand {
+  text-transform: uppercase;
+  color: #000 !important;
+  font-family: "Inconsolata", monospace;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
+header nav .nav-item {
+  margin-left: 100px;
+}
+
+header nav .nav-item .nav-link {
+  color: #626262;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+header nav .nav-item .nav-link:focus, header nav .nav-item .nav-link:hover {
+  color: #000 !important;
+}
+
+@media (max-width: 991.98px) {
+  header nav .navbar-nav {
+    text-align: center;
+  }
+  header nav .navbar-nav .nav-item {
+    margin-left: 0;
+    padding-top: 10px;
+  }
+  header nav .navbar-toggler {
+    color: transparent !important;
+    border-color: transparent !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  header {
+    background-size: 170% 80%;
+    background-position: bottom;
+  }
+}
+
+.first-post span {
+  color: #c7c1b6;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.first-post h3, .first-post p {
+  color: #626262;
+  font-family: "Playfair Display", serif;
+  padding: 12px 0;
+}
+
+.first-post p {
+  font-size: 14px;
+  padding-top: 0;
+  padding-bottom: 28px;
+}
+
+.sec-post img, .last-post img {
+  display: block;
+  width: 100%;
+}
+
+.sec-post span, .last-post span {
+  color: #c7c1b6;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: block;
+  padding: 18px 0;
+}
+
+.sec-post h3, .last-post h3, .sec-post p, .last-post p {
+  color: #626262;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+}
+
+.sec-post p, .last-post p {
+  font-size: 14px;
+  padding-top: 0;
+}
+
+.newsletter {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 60px 0;
+}
+
+.newsletter h3, .newsletter .first-post p, .first-post .newsletter p, .newsletter .sec-post p, .sec-post .newsletter p, .newsletter .last-post p, .last-post .newsletter p {
+  color: #626262;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 57px;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter form input[type="email"] {
+  border: unset;
+  background-color: transparent;
+  border-bottom: 1px solid #000;
+  width: 333px;
+  padding: 6px 6px;
+}
+
+.newsletter form input[type="email"]::placeholder {
+  font-family: "Playfair Display", serif;
+  color: #626262;
+  font-size: 14px;
+}
+
+.newsletter form input[type="submit"] {
+  position: relative;
+  bottom: -2px;
+  right: 30px;
+  border: unset;
+}
+
+@media (max-width: 576px) {
+  .newsletter form input[type="email"] {
+    width: auto;
+  }
+  .newsletter form input[type="email"]::placeholder {
+    font-size: 12px;
+  }
+}
+
+.last-post .bt {
+  text-align: center;
+  margin-top: 36px;
+}
+
+.last-post .bt button {
+  font-family: "Playfair Display", serif;
+  color: #626262;
+  background-color: transparent;
+  padding: 11px 22px;
+  border: 1px solid #c7c1b6;
+}
+
+.last-post .bt button:hover {
+  background-color: #626262;
+  color: #000;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 30px 0;
+  text-align: center;
+}
+
+footer p {
+  color: #000;
+}
+/*# sourceMappingURL=main.css.map */

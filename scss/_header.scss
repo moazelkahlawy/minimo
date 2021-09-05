@@ -1,0 +1,60 @@
+header {
+    height: 100vh;
+    background: url(../img/header.png);
+    background-repeat: no-repeat;
+    background-size: 100% 86%;
+    background-position: bottom;
+
+    nav {
+        .navbar-brand {
+            text-transform: uppercase;
+            color: $logocolor !important;
+            font-family: $logofont;
+            font-size: 30px;
+            letter-spacing: 4px;
+        }
+
+        .nav-item {
+            margin-left: 100px;
+
+            .nav-link {
+                color: $maincolor;
+                font-family: $mainfont;
+                text-transform: uppercase;
+                font-size: 15px;
+
+                &:focus,
+                &:hover {
+                    color: #000 !important;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 991.98px) {
+        nav {
+            .navbar-nav {
+                text-align: center;
+
+                .nav-item {
+                    margin-left: 0;
+                    padding-top: 10px;
+                }
+            }
+
+            .navbar-toggler {
+                color: transparent !important;
+                border-color: transparent !important;
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 575.98px) {
+    header {
+        background-size: 170% 80%;
+        background-position: bottom;
+    }
+}

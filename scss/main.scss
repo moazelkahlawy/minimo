@@ -1,0 +1,14 @@
+@import "_var";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import "_header";
+@import "_first-post";
+@import "_sec-post";
+@import "_newsletter";
+@import "_last-post";
+@import "_footer";

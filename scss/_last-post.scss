@@ -1,0 +1,18 @@
+.last-post{
+    @extend .sec-post;
+    .bt{
+        text-align: center;
+        margin-top: 36px;
+        button{
+            font-family: $mainfont;
+            color: $maincolor;
+            background-color: transparent;
+            padding: 11px 22px;
+            border: 1px solid $seccolor;
+            &:hover{
+                background-color: $theecolor;
+                color: #000;
+            }
+        }
+    }
+}
